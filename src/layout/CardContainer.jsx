@@ -1,5 +1,6 @@
 import React from "react";
 import { useEffect, useState } from "react";
+import Header from "../components/Header";
 
 const CardContainer = (props) => {
   const [activeItem, setActiveItem] = useState("home");
@@ -33,8 +34,10 @@ const CardContainer = (props) => {
 
   return (
     <>
-      <div>{index}</div>
       <div className="card-container">
+		<section className="card-container_header">
+			<Header />
+		</section>
         <ul className="card-nav">
           <li className="card-nav_nav-item">
             <a
