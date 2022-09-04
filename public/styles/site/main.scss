@@ -5,3 +5,8 @@
 @import './_layout/_layout.scss';
 @import './_components/_header.scss';
 @import './_components/_button.scss';
+@import './_pages/_animatedPage.scss';
+
+.full-width {
+	width: 100% !important;
+}
