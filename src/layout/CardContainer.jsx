@@ -52,7 +52,7 @@ const CardContainer = (props) => {
             <section className="animated-section">
               <AboutMe />
             </section>
-            <section className="animated-section section-active">
+            <section className="animated-section">
               <Resume />
             </section>
             <section className="animated-section">
@@ -61,7 +61,7 @@ const CardContainer = (props) => {
             <section className="animated-section">
               <Blog />
             </section>
-            <section className="animated-section">
+            <section className="animated-section section-active">
               <Contact />
             </section>
           </div>
