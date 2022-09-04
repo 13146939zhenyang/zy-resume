@@ -2,6 +2,7 @@
 @import './_utils/_mixin.scss';
 @import './_utils/_shadows.scss';
 @import './_utils/_variables.scss';
+@import './_utils/_swiper.scss';
 @import './_layout/_layout.scss';
 @import './_components/_header.scss';
 @import './_components/_button.scss';
@@ -9,4 +10,10 @@
 
 .full-width {
 	width: 100% !important;
+}
+.white-space-50 {
+	padding-bottom: 50px !important;
+}
+.white-space-30 {
+	padding-bottom: 30px !important;
 }
