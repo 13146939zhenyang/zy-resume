@@ -417,10 +417,28 @@
 }
 
 .email-form-wrapper {
+	label {
+		display: block;
+		width: 100%;
+		position: relative;
+		margin-bottom: 20px;
+		padding-right: 20px;
+		span {
+			position: absolute;
+			top: 0;
+			left: 10px;
+			color: black;
+		}
+	}
+    &_input {
+		width: 100%;
+	}
 
-    &_input {}
+    &_textarea {
+		width: 100%;
+	}
 
-    &_textarea {}
-
-    &_button {}
+    &_send-button {
+		color: black;
+	}
 }
