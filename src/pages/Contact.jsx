@@ -1,5 +1,40 @@
-import { Row, Col } from "antd";
+import { Row, Col, message } from "antd";
+import { useRef } from "react";
+import emailjs from "@emailjs/browser";
+import reCAPTCHA from "react-google-recaptcha";
+
 const Contact = () => {
+  const form = useRef();
+  const captchaRef = useRef(null)
+  const sendEmail = (e) => {
+    e.preventDefault();
+    emailjs
+      .sendForm(
+        "service_787d8zg",
+        "template_qst6o8b",
+        form.current,
+        "dJSQJ9VePguwnk9ua"
+      )
+      .then(
+        (result) => {
+          if (result.status === 200) {
+            console.log(result.text);
+            console.log(result);
+            message.success({
+              content:
+                "Your message has been sent, and we will reponse as soon as possible!",
+              className: "custom-class",
+              style: {
+                marginTop: "20vh",
+              },
+            });
+          }
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
   return (
     <>
       <div class="page-title">
@@ -24,7 +59,9 @@ const Contact = () => {
 
             <div class="lm-info-block gray-default">
               <i class="lnr lnr-envelope"></i>
-              <h4>zhen.yang.syd@gmail.com</h4>
+              <h4 style={{ wordWrap: "break-word", width: "100%" }}>
+                zhen.yang.syd@gmail.com
+              </h4>
               <span class="lm-info-block-value"></span>
               <span class="lm-info-block-text"></span>
             </div>
@@ -40,6 +77,7 @@ const Contact = () => {
             <div id="map" class="map">
               <div class="lmpixels-map">
                 <iframe
+                  style={{ width: "100%" }}
                   frameborder="0"
                   scrolling="no"
                   marginheight="0"
@@ -53,7 +91,58 @@ const Contact = () => {
                 How Can I <span>Help You?</span>
               </h3>
             </div>
-
+            <form ref={form} onSubmit={sendEmail}>
+              <Row className="full-width email-form-wrapper">
+                <Col lg={12} sm={24}>
+                  <label>
+                    <span>Full Name</span>
+                    <input
+                      type="text"
+                      name="user_name"
+                      className="email-form-wrapper_input"
+                    />
+                  </label>
+                  <label>
+                    <span>Email Address</span>
+                    <input
+                      type="email"
+                      name="user_email"
+                      className="email-form-wrapper_input"
+                    />
+                  </label>
+                  <label>
+                    <span>Subject</span>
+                    <input
+                      type="subject"
+                      name="user_subject"
+                      className="email-form-wrapper_input"
+                    />
+                  </label>
+                </Col>
+                <Col lg={12} sm={24}>
+                  <label>
+                    <span>Message</span>
+                    <textarea
+                      name="message"
+                      className="email-form-wrapper_textarea"
+                    />
+                  </label>
+                </Col>
+              </Row>
+              <reCAPTCHA
+                sitekey="6Le-ktQhAAAAAHlaFuM85d3h4V99oYPvy2llQG3Q"
+                ref={captchaRef}
+              />
+              <Row className="full-width" justify="center">
+                <Col>
+                  <input
+                    type="submit"
+                    value="Send"
+                    className="email-from-wrapper_send-button"
+                  />
+                </Col>
+              </Row>
+            </form>
             {/* <form
               id="contact_form"
               class="contact-form"

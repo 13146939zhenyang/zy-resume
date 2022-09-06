@@ -386,10 +386,10 @@
     -ms-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
 
-	h4 {
-		font-size: 15px;
-		margin-top: 8px;
-	}
+    h4 {
+        font-size: 15px;
+        margin-top: 8px;
+    }
 
     i {
         position: relative;
@@ -406,12 +406,21 @@
         margin: 10px 0;
         color: #04b4e0;
     }
-	.lm-info-block-text {
 
-	}
+    .lm-info-block-text {}
 }
+
 .map {
-	width: 100%;
+    width: 100%;
     height: 140px;
     margin: 0 0 35px;
+}
+
+.email-form-wrapper {
+
+    &_input {}
+
+    &_textarea {}
+
+    &_button {}
 }
