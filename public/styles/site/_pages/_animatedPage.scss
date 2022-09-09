@@ -417,28 +417,54 @@
 }
 
 .email-form-wrapper {
-	label {
-		display: block;
-		width: 100%;
-		position: relative;
-		margin-bottom: 20px;
-		padding-right: 20px;
-		span {
-			position: absolute;
-			top: 0;
-			left: 10px;
-			color: black;
-		}
-	}
+    label {
+        display: block;
+        width: 100%;
+        position: relative;
+        margin-bottom: 20px;
+        padding-right: 20px;
+
+        span {
+            position: absolute;
+            top: 2px;
+            left: 10px;
+            color: black;
+        }
+    }
+
     &_input {
-		width: 100%;
-	}
+        width: 100%;
+    }
 
     &_textarea {
-		width: 100%;
-	}
+        width: 100%;
+    }
 
     &_send-button {
-		color: black;
-	}
+        color: black;
+    }
+
+    .ant-form-item-explain-error {
+        color: #fff;
+        background-color: #ff4e4e;
+        font-family: poppins, Helvetica, sans-serif;
+        font-weight: 600;
+        position: absolute;
+        display: inline-block;
+        padding: 0 5px;
+        font-size: .93em;
+        line-height: 1.75em;
+        margin: -2px 0 0 10px;
+
+        &::after {
+            content: " ";
+            position: absolute;
+            left: 5px;
+            bottom: 100%;
+            width: 0;
+            height: 0;
+            border-bottom: 10px solid #ff4e4e;
+            border-right: 10px solid transparent;
+        }
+    }
 }

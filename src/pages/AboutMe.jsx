@@ -71,7 +71,7 @@ const AboutMe = () => {
               <div className="info-list-w-icon">
                 <div className="info-block-w-icon">
                   <div className="ci-icon">
-                    <i class="lnr lnr-pencil"></i>
+                    <i className="lnr lnr-pencil"></i>
                   </div>
                   <div className="ci-text">
                     <h4>Ecommerce</h4>
@@ -88,7 +88,7 @@ const AboutMe = () => {
               <div className="info-list-w-icon">
                 <div className="info-block-w-icon">
                   <div className="ci-icon">
-                    <i class="lnr lnr-keyboard"></i>
+                    <i className="lnr lnr-keyboard"></i>
                   </div>
                   <div className="ci-text">
                     <h4>Ecommerce</h4>
@@ -109,7 +109,7 @@ const AboutMe = () => {
               <div className="info-list-w-icon">
                 <div className="info-block-w-icon">
                   <div className="ci-icon">
-                    <i class="lnr lnr-laptop-phone"></i>
+                    <i className="lnr lnr-laptop-phone"></i>
                   </div>
                   <div className="ci-text">
                     <h4>Ecommerce</h4>
@@ -126,7 +126,7 @@ const AboutMe = () => {
               <div className="info-list-w-icon">
                 <div className="info-block-w-icon">
                   <div className="ci-icon">
-                    <i class="lnr lnr-cloud-sync"></i>
+                    <i className="lnr lnr-cloud-sync"></i>
                   </div>
                   <div className="ci-text">
                     <h4>Ecommerce</h4>
@@ -162,7 +162,7 @@ const AboutMe = () => {
               scrollbar={{ draggable: true }}
               onSwiper={(swiper) => console.log(swiper)}
               onSlideChange={() => console.log("slide change")}
-              Autoplay={{ delay: 500, disableOnInteraction: false }}
+              autoplay={{ delay: 500, disableOnInteraction: false }}
             >
               <SwiperSlide>Slide 1</SwiperSlide>
               <SwiperSlide>Slide 2</SwiperSlide>
@@ -191,7 +191,7 @@ const AboutMe = () => {
               scrollbar={{ draggable: true }}
               onSwiper={(swiper) => console.log(swiper)}
               onSlideChange={() => console.log("slide change")}
-              Autoplay={{ delay: 500, disableOnInteraction: false }}
+              autoplay={{ delay: 500, disableOnInteraction: false }}
             >
               <SwiperSlide>Slide 1</SwiperSlide>
               <SwiperSlide>Slide 2</SwiperSlide>
@@ -216,27 +216,27 @@ const AboutMe = () => {
         </Row>
         <Row className="full-width" justify="space-between">
           <Col xs={24} sm={7}>
-            <div class="fun-fact gray-default">
-              <i class="lnr lnr-heart"></i>
+            <div className="fun-fact gray-default">
+              <i className="lnr lnr-heart"></i>
               <h4>Happy Clients</h4>
-              <span class="fun-fact-block-value">578</span>
-              <span class="fun-fact-block-text"></span>
+              <span className="fun-fact-block-value">578</span>
+              <span className="fun-fact-block-text"></span>
             </div>
           </Col>
           <Col xs={24} sm={7}>
-            <div class="fun-fact gray-default">
-              <i class="lnr lnr-clock"></i>
+            <div className="fun-fact gray-default">
+              <i className="lnr lnr-clock"></i>
               <h4>Working Hours</h4>
-              <span class="fun-fact-block-value">4,780</span>
-              <span class="fun-fact-block-text"></span>
+              <span className="fun-fact-block-value">4,780</span>
+              <span className="fun-fact-block-text"></span>
             </div>
           </Col>
           <Col xs={24} sm={7}>
-            <div class="fun-fact gray-default">
-              <i class="lnr lnr-star"></i>
+            <div className="fun-fact gray-default">
+              <i className="lnr lnr-star"></i>
               <h4>Awards Won</h4>
-              <span class="fun-fact-block-value">15</span>
-              <span class="fun-fact-block-text"></span>
+              <span className="fun-fact-block-value">15</span>
+              <span className="fun-fact-block-text"></span>
             </div>
           </Col>
         </Row>

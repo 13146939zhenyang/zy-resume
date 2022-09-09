@@ -11,17 +11,17 @@ const Resume = () => {
             <div className="block-title">
               <h3>Education</h3>
             </div>
-            <div class="timeline timeline-second-style clearfix">
-              <div class="timeline-item clearfix">
-                <div class="left-part">
-                  <h5 class="item-period">2020</h5>
-                  <span class="item-company">
+            <div className="timeline timeline-second-style clearfix">
+              <div className="timeline-item clearfix">
+                <div className="left-part">
+                  <h5 className="item-period">2020</h5>
+                  <span className="item-company">
                     University of Technology Sydney
                   </span>
                 </div>
-                <div class="divider"></div>
-                <div class="right-part">
-                  <h4 class="item-title">Master of Internetworking</h4>
+                <div className="divider"></div>
+                <div className="right-part">
+                  <h4 className="item-title">Master of Internetworking</h4>
                   {/* <p>
                     Maecenas finibus nec sem ut imperdiet. Ut tincidunt est ac
                     dolor aliquam sodales. Phasellus sed mauris hendrerit,
@@ -30,16 +30,16 @@ const Resume = () => {
                 </div>
               </div>
 
-              <div class="timeline-item clearfix">
-                <div class="left-part">
-                  <h5 class="item-period">2017</h5>
-                  <span class="item-company">
+              <div className="timeline-item clearfix">
+                <div className="left-part">
+                  <h5 className="item-period">2017</h5>
+                  <span className="item-company">
                     University of Macau Polytechnic
                   </span>
                 </div>
-                <div class="divider"></div>
-                <div class="right-part">
-                  <h4 class="item-title">Bachalor of Computer Science</h4>
+                <div className="divider"></div>
+                <div className="right-part">
+                  <h4 className="item-title">Bachalor of Computer Science</h4>
                   {/* <p>
                     Aliquam tincidunt malesuada tortor vitae iaculis. In eu
                     turpis iaculis, feugiat risus quis, aliquet urna. Quisque
@@ -52,15 +52,15 @@ const Resume = () => {
             <div className="block-title">
               <h3>Experience</h3>
             </div>
-            <div class="timeline timeline-second-style clearfix">
-              <div class="timeline-item clearfix">
-                <div class="left-part">
-                  <h5 class="item-period">2021 - Current</h5>
-                  <span class="item-company">DOTech</span>
+            <div className="timeline timeline-second-style clearfix">
+              <div className="timeline-item clearfix">
+                <div className="left-part">
+                  <h5 className="item-period">2021 - Current</h5>
+                  <span className="item-company">DOTech</span>
                 </div>
-                <div class="divider"></div>
-                <div class="right-part">
-                  <h4 class="item-title">Front-end Developer</h4>
+                <div className="divider"></div>
+                <div className="right-part">
+                  <h4 className="item-title">Front-end Developer</h4>
                   <p>
                     Praesent dignissim sollicitudin justo, sed elementum quam
                     lacinia quis. Phasellus eleifend tristique posuere. Sed
@@ -69,14 +69,14 @@ const Resume = () => {
                 </div>
               </div>
 
-              <div class="timeline-item clearfix">
-                <div class="left-part">
-                  <h5 class="item-period">2020 - 2021</h5>
-                  <span class="item-company">JR Academy</span>
+              <div className="timeline-item clearfix">
+                <div className="left-part">
+                  <h5 className="item-period">2020 - 2021</h5>
+                  <span className="item-company">JR Academy</span>
                 </div>
-                <div class="divider"></div>
-                <div class="right-part">
-                  <h4 class="item-title">Full-stack Developer Intern</h4>
+                <div className="divider"></div>
+                <div className="right-part">
+                  <h4 className="item-title">Full-stack Developer Intern</h4>
                   <p>
                     Maecenas tempus faucibus rutrum. Duis eu aliquam urna. Proin
                     vitae nulla tristique, ornare felis id, congue libero. Nam
@@ -85,14 +85,14 @@ const Resume = () => {
                 </div>
               </div>
 
-              <div class="timeline-item clearfix">
-                <div class="left-part">
-                  <h5 class="item-period">2020</h5>
-                  <span class="item-company">Millfx</span>
+              <div className="timeline-item clearfix">
+                <div className="left-part">
+                  <h5 className="item-period">2020</h5>
+                  <span className="item-company">Millfx</span>
                 </div>
-                <div class="divider"></div>
-                <div class="right-part">
-                  <h4 class="item-title">Front-end Developer Intern</h4>
+                <div className="divider"></div>
+                <div className="right-part">
+                  <h4 className="item-title">Front-end Developer Intern</h4>
                   <p>
                     Duis mollis nunc quis quam viverra venenatis. Nulla nulla
                     arcu, congue vitae nunc ac, sodales ultricies diam. Nullam
@@ -103,24 +103,24 @@ const Resume = () => {
             </div>
           </Col>
           <Col xs={24} sm={10}>
-            <div class="block-title">
+            <div className="block-title">
               <h3>
                 UI Design <span>Tools</span>
               </h3>
             </div>
-            <ul class="knowledges">
+            <ul className="knowledges">
               <li>Adobe XD</li>
               <li>Figma</li>
               <li>Sketch</li>
               <li>Zeplin</li>
             </ul>
             <div className="white-space-10"></div>
-            <div class="block-title">
+            <div className="block-title">
               <h3>
                 Development <span>Tools</span>
               </h3>
             </div>
-            <ul class="knowledges">
+            <ul className="knowledges">
               <li>VS Code</li>
               <li>Terminal</li>
               <li>Jira</li>
@@ -134,12 +134,12 @@ const Resume = () => {
 			  <li>Google Chrome Inspector</li>
             </ul>
             <div className="white-space-10"></div>
-            <div class="block-title">
+            <div className="block-title">
               <h3>
                 Front-end <span>Technology</span>
               </h3>
             </div>
-            <ul class="knowledges">
+            <ul className="knowledges">
               <li>HTML5</li>
               <li>CSS3</li>
               <li>JavaScript</li>
@@ -211,23 +211,23 @@ const Resume = () => {
 			  <li>JSON</li>
 			  <li>Trulioo</li>
             </ul>
-			<div class="block-title">
+			<div className="block-title">
               <h3>
                 Database <span>Skills</span>
               </h3>
             </div>
-            <ul class="knowledges">
+            <ul className="knowledges">
               <li>MongoDB</li>
               <li>Mongoose</li>
               <li>GraphQL</li>
 			  <li>MySQL</li>
             </ul>
-			<div class="block-title">
+			<div className="block-title">
               <h3>
                 Back-end <span>Skills</span>
               </h3>
             </div>
-            <ul class="knowledges">
+            <ul className="knowledges">
               <li>Node.js</li>
               <li>Koa.js</li>
               <li>Express.js</li>
@@ -238,22 +238,22 @@ const Resume = () => {
               <li>Stripe.js</li>
               <li>Braintree.js</li>
             </ul>
-			<div class="block-title">
+			<div className="block-title">
               <h3>
                 Testing <span>Skills</span>
               </h3>
             </div>
-            <ul class="knowledges">
+            <ul className="knowledges">
               <li>Unit test</li>
               <li>e2e test</li>
               <li>TDD</li>
             </ul>
-			<div class="block-title">
+			<div className="block-title">
               <h3>
                 Cloud <span>Skills</span>
               </h3>
             </div>
-            <ul class="knowledges">
+            <ul className="knowledges">
               <li>AWS cloud9</li>
               <li>AWS Amplify</li>
               <li>AWS S3</li>
@@ -263,29 +263,29 @@ const Resume = () => {
               <li>AWS Lambda</li>
               <li>Google App Engine</li>
             </ul>
-			<div class="block-title">
+			<div className="block-title">
               <h3>
                 Architectures <span>Skills</span>
               </h3>
             </div>
-            <ul class="knowledges">
+            <ul className="knowledges">
               <li>RESTful API</li>
             </ul>
-			<div class="block-title">
+			<div className="block-title">
               <h3>
                 DevOps <span>Skills</span>
               </h3>
             </div>
-            <ul class="knowledges">
+            <ul className="knowledges">
               <li>Jenkins</li>
               <li>Docker</li>
             </ul>
-			<div class="block-title">
+			<div className="block-title">
               <h3>
                 Methodologies
               </h3>
             </div>
-            <ul class="knowledges">
+            <ul className="knowledges">
               <li>Agile</li>
               <li>Scrum</li>
               <li>Kanban</li>
