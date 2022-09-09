@@ -179,7 +179,7 @@ const Contact = () => {
                 </Col>
               </Row>
               <Row className="full-width">
-                <ReCAPTCHA sitekey="6Le-ktQhAAAAAHlaFuM85d3h4V99oYPvy2llQG3Q" />
+                <ReCAPTCHA sitekey="6Le-ktQhAAAAAHlaFuM85d3h4V99oYPvy2llQG3Q" theme="dark"/>
               </Row>
               <div className="white-space-10"></div>
               <Row className="full-width" justify="center">

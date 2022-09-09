@@ -443,7 +443,9 @@
     &_send-button {
         color: black;
     }
-
+	#rc-anchor-container {
+		background: transparent;
+	}
     .ant-form-item-explain-error {
         color: #fff;
         background-color: #ff4e4e;
