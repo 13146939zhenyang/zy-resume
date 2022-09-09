@@ -137,8 +137,10 @@ const Contact = () => {
                         message: "Name is required!",
                       },
                     ]}
+                    className="form-item"
                   >
-                    <Input placeholder="Username" />
+                    <Input />
+                    <span className="form-item_placeholder">Username</span>
                   </Form.Item>
 
                   <Form.Item
@@ -149,8 +151,10 @@ const Contact = () => {
                         message: "Email is required!",
                       },
                     ]}
+					className="form-item"
                   >
-                    <Input placeholder="Email" />
+                    <Input />
+					<span className="form-item_placeholder">Email</span>
                   </Form.Item>
                   <Form.Item
                     name="user_subject"
@@ -160,8 +164,10 @@ const Contact = () => {
                         message: "Subject is required!",
                       },
                     ]}
+					className="form-item"
                   >
-                    <Input placeholder="Subject" />
+                    <Input />
+					<span className="form-item_placeholder">Subject</span>
                   </Form.Item>
                 </Col>
                 <Col lg={12} sm={24}>
@@ -174,19 +180,23 @@ const Contact = () => {
                       },
                     ]}
                   >
-                    <TextArea placeholder="Message" rows={4} />
+                    <TextArea rows={4} className="form-item" />
+					{/* <span className="form-item_placeholder">Message</span> */}
                   </Form.Item>
                 </Col>
               </Row>
               <Row className="full-width">
-                <ReCAPTCHA sitekey="6Le-ktQhAAAAAHlaFuM85d3h4V99oYPvy2llQG3Q" theme="dark"/>
+                <ReCAPTCHA
+                  sitekey="6Le-ktQhAAAAAHlaFuM85d3h4V99oYPvy2llQG3Q"
+                  theme="dark"
+                />
               </Row>
               <div className="white-space-10"></div>
               <Row className="full-width" justify="center">
                 <Col>
                   <Form.Item>
-                    <Button type="primary" htmlType="submit">
-                      Send
+                    <Button htmlType="submit" className="send-button">
+                      Send Message
                     </Button>
                   </Form.Item>
                 </Col>
