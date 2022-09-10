@@ -89,10 +89,12 @@
             transition: all .3s ease-in-out;
 
             &:hover {
-				color: $blue;
+                color: $blue;
+
                 .hover-tab {
+					animation: mymove1 .7s;
                     visibility: visible;
-                    opacity: 1;
+					opacity: 1;
                 }
             }
 

@@ -1,6 +1,7 @@
 import "./App.scss";
 import { useState, useEffect } from "react";
 import CardContainer from './layout/CardContainer';
+import LoadingPage from "./pages/LoadingPage";
 
 const App = () => {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
@@ -32,6 +33,11 @@ const App = () => {
     setHeigth(23 / window.innerHeight);
     setWidth(23 / window.innerWidth);
   }, [window.innerHeight, window.innerWidth]);
+  useEffect(() => {
+	setTimeout(() => {
+		
+	}, 2000);
+  }, []);
   return (
     <>
       <div

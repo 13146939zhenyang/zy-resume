@@ -15,7 +15,7 @@ const CardContainer = (props) => {
     "about-me",
     "resume",
     "portfolio",
-    "blog",
+    // "blog",
     "contact",
   ];
   const [index, setIndex] = useState(0);
@@ -46,7 +46,6 @@ const CardContainer = (props) => {
         </section>
         <section className="card-container_content">
           <div className="card-container_content--animated-sections">
-            {/* <section className="animated-section section-active"> */}
 			<section className={index === 0 ? "animated-section section-active": "animated-section"}>
               <Home />
             </section>
@@ -59,10 +58,10 @@ const CardContainer = (props) => {
             <section className={index === 3 ? "animated-section section-active": "animated-section"}>
               <Portfolio />
             </section>
-            <section className={index === 4 ? "animated-section section-active": "animated-section"}>
+            {/* <section className={index === 4 ? "animated-section section-active": "animated-section"}>
               <Blog />
-            </section>
-            <section className={index === 5 ? "animated-section section-active": "animated-section"}>
+            </section> */}
+            <section className={index === 4 ? "animated-section section-active": "animated-section"}>
               <Contact />
             </section>
           </div>
@@ -121,7 +120,7 @@ const CardContainer = (props) => {
               <span className="hover-tab">Portfolio</span>
             </a>
           </li>
-          <li className="card-nav_nav-item">
+          {/* <li className="card-nav_nav-item">
             <a
               href="#blog"
               className={activeItem === "blog" ? "active" : ""}
@@ -133,14 +132,14 @@ const CardContainer = (props) => {
               <span className="menu-icon lnr lnr-book"></span>
               <span className="hover-tab">Blog</span>
             </a>
-          </li>
+          </li> */}
           <li className="card-nav_nav-item">
             <a
               href="#contact"
               className={activeItem === "contact" ? "active" : ""}
               onClick={() => {
                 setActiveItem("contact");
-                setIndex(5);
+                setIndex(4);
               }}
             >
               <span className="menu-icon lnr lnr-envelope"></span>
