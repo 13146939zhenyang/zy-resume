@@ -46,22 +46,23 @@ const CardContainer = (props) => {
         </section>
         <section className="card-container_content">
           <div className="card-container_content--animated-sections">
-            <section className="animated-section">
+            {/* <section className="animated-section section-active"> */}
+			<section className={index === 0 ? "animated-section section-active": "animated-section"}>
               <Home />
             </section>
-            <section className="animated-section">
+            <section className={index === 1 ? "animated-section section-active": "animated-section"}>
               <AboutMe />
             </section>
-            <section className="animated-section">
+            <section className={index === 2 ? "animated-section section-active": "animated-section"}>
               <Resume />
             </section>
-            <section className="animated-section">
+            <section className={index === 3 ? "animated-section section-active": "animated-section"}>
               <Portfolio />
             </section>
-            <section className="animated-section">
+            <section className={index === 4 ? "animated-section section-active": "animated-section"}>
               <Blog />
             </section>
-            <section className="animated-section section-active">
+            <section className={index === 5 ? "animated-section section-active": "animated-section"}>
               <Contact />
             </section>
           </div>
