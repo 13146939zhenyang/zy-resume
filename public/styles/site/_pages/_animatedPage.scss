@@ -450,7 +450,7 @@
 
     .ant-input {
         position: relative;
-        border: 2px solid #999;
+        border: 2px solid #a5a6a7;
         border-radius: 5px;
         display: block;
         font-size: 1em;
@@ -470,6 +470,10 @@
         box-shadow: 0 10px 10px -8px rgba(0, 0, 0, 10%);
         color: #fff;
         font-weight: 600;
+		&:focus {
+			transition: .5s ease-in-out;
+			border-color: $blue;
+		}
     }
 
     .ant-input-status-error:not(.ant-input-disabled):not(.ant-input-borderless).ant-input:focus {
@@ -544,18 +548,30 @@
         background-color: $blue;
     }
 }
+
 #information-form {
-	.form-item {
-		position: relative;
-		&_placeholder {
-			position: absolute;
-			color: #fff;
-			top: 10px;
-			left: 15px;
-			z-index: -1;
-			&:hover {
-				top: -10px;
-			}
-		}
-	}
+    .form-item {
+        position: relative;
+        &_placeholder {
+            position: absolute;
+            color: #a5a6a7;
+            top: 10px;
+            left: 15px;
+            z-index: -1;
+            font-family: poppins, Helvetica, sans-serif;
+            font-weight: 600;
+			transition: .35s ease-in-out;
+        }
+
+        &_placeholder-active {
+            position: absolute;
+            color: $blue;
+            top: -23px;
+            left: 0px;
+            z-index: -1;
+            font-family: poppins, Helvetica, sans-serif;
+            font-weight: 600;
+			transition: .35s ease-in-out;
+        }
+    }
 }

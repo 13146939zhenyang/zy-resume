@@ -1,50 +1,21 @@
 import { Row, Col, message, Form, Input, Button } from "antd";
-import { useRef } from "react";
+import { useState, useEffect } from "react";
 import emailjs from "@emailjs/browser";
-import ReCAPTCHA from "react-google-recaptcha"
+import ReCAPTCHA from "react-google-recaptcha";
 
 const { TextArea } = Input;
-const Contact = () => {	
-  const form = useRef();
-  const captchaRef = useRef(null);
-  const sendEmail = (e) => {
-	console.log(form.current)
-    e.preventDefault();
-    emailjs
-      .sendForm(
-        "service_787d8zg",
-        "template_qst6o8b",
-        form.current,
-        "dJSQJ9VePguwnk9ua"
-      )
-      .then(
-        (result) => {
-          if (result.status === 200) {
-            console.log(result.text);
-            console.log(result);
-            message.success({
-              content:
-                "Your message has been sent, and we will reponse as soon as possible!",
-              className: "custom-class",
-              style: {
-                marginTop: "20vh",
-              },
-            });
-          }
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
-  };
+const Contact = () => {
+  const [userName, setUserName] = useState();
+  const [userEmail, setUserEmail] = useState();
+  const [userSubject, setUserSubject] = useState();
+  const [userMessage, setUserMessage] = useState();
   const onFinish = (value) => {
     console.log(value);
     emailjs
       .sendForm(
         "service_787d8zg",
         "template_qst6o8b",
-        // value,
-		"#information-form",
+        "#information-form",
         "dJSQJ9VePguwnk9ua"
       )
       .then(
@@ -129,60 +100,64 @@ const Contact = () => {
                 justify="space-between"
               >
                 <Col lg={11} sm={24}>
-                  <Form.Item
-                    name="user_name"
-                    rules={[
-                      {
-                        required: true,
-                        message: "Name is required!",
-                      },
-                    ]}
-                    className="form-item"
-                  >
-                    <Input />
-                    <span className="form-item_placeholder">Username</span>
-                  </Form.Item>
-
-                  <Form.Item
-                    name="user_email"
-                    rules={[
-                      {
-                        required: true,
-                        message: "Email is required!",
-                      },
-                    ]}
-					className="form-item"
-                  >
-                    <Input />
-					<span className="form-item_placeholder">Email</span>
-                  </Form.Item>
-                  <Form.Item
-                    name="user_subject"
-                    rules={[
-                      {
-                        required: true,
-                        message: "Subject is required!",
-                      },
-                    ]}
-					className="form-item"
-                  >
-                    <Input />
-					<span className="form-item_placeholder">Subject</span>
-                  </Form.Item>
+                  <div className="form-item">
+                    <Form.Item
+                      name="user_name"
+                      rules={[
+                        {
+                          required: true,
+                          message: "Name is required!",
+                        },
+                      ]}
+                    >
+                      <Input onChange={(e)=>setUserName(e.target.value)}/>
+                    </Form.Item>
+                    <span className={userName ? "form-item_placeholder-active" : "form-item_placeholder"}>Username</span>
+                  </div>
+                  <div className="form-item">
+                    <Form.Item
+                      name="user_email"
+                      rules={[
+                        {
+                          required: true,
+                          message: "Email is required!",
+                        },
+                      ]}
+                    >
+                      <Input onChange={(e)=>setUserEmail(e.target.value)} />
+                    </Form.Item>
+                    <span className={userEmail ? "form-item_placeholder-active" : "form-item_placeholder"}>Email</span>
+                  </div>
+                  <div className="form-item">
+                    <Form.Item
+                      name="user_subject"
+                      rules={[
+                        {
+                          required: true,
+                          message: "Subject is required!",
+                        },
+                      ]}
+                    >
+                      <Input onChange={(e)=>setUserSubject(e.target.value)}/>
+                    </Form.Item>
+                    <span className={userSubject ? "form-item_placeholder-active" : "form-item_placeholder"}>Subject</span>
+                  </div>
                 </Col>
                 <Col lg={12} sm={24}>
-                  <Form.Item
-                    name="user_message"
-                    rules={[
-                      {
-                        required: true,
-                        message: "Message is required!",
-                      },
-                    ]}
-                  >
-                    <TextArea rows={4} className="form-item" />
-					{/* <span className="form-item_placeholder">Message</span> */}
-                  </Form.Item>
+                  <div className="form-item">
+                    <Form.Item
+                      name="user_message"
+                      rules={[
+                        {
+                          required: true,
+                          message: "Please leave me a message!",
+                        },
+                      ]}
+                    >
+                      <TextArea rows={4} onChange={(e)=>setUserMessage(e.target.value)}/>
+                    </Form.Item>
+                    <span className={userMessage ? "form-item_placeholder-active" : "form-item_placeholder"}>Message</span>
+                  </div>
                 </Col>
               </Row>
               <Row className="full-width">
