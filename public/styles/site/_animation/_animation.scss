@@ -22,11 +22,9 @@
     from {
         transform-origin: right 0px -2000px;
         transform: translateX(0px) translateY(0px) rotateY(0deg) scale(1);
-        opacity: 1;
     }
     to {
         transform-origin: right 0px -2000px;
         transform: translateX(-10vw) translateY(20vh) rotateY(-110deg) scale(0.6);
-        opacity: 0;
     }
 }
