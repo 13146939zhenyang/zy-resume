@@ -25,6 +25,13 @@
     overflow: auto;
     visibility: visible;
     z-index: 99;
+	transition: .35s ease-in-out;
+	animation: pageCome 1s;
+}
+.section-deactive {
+	opacity: 0;
+	transition: .35s ease-in-out;
+	animation: pageGo 1s;
 }
 
 .section-content {
@@ -575,3 +582,4 @@
         }
     }
 }
+// portfolio

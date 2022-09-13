@@ -1,4 +1,4 @@
-@keyframes mymove1 {
+@keyframes navAnimation {
 	from {
 		right: -20px;
 	}
@@ -6,4 +6,27 @@
 	to {
 		right:60px;
 	}
+}
+@keyframes pageCome {
+    from {
+        transform-origin: right 0px -2000px;
+        transform: translateX(10vw) translateY(50vh) rotateY(180deg) scale(0.6);
+    }
+    to {
+        transform-origin: right 0px -2000px;
+        transform: translateX(0px) translateY(0px) rotateY(0deg) scale(1);
+    }
+}
+
+@keyframes pageGo {
+    from {
+        transform-origin: right 0px -2000px;
+        transform: translateX(0px) translateY(0px) rotateY(0deg) scale(1);
+        opacity: 1;
+    }
+    to {
+        transform-origin: right 0px -2000px;
+        transform: translateX(-10vw) translateY(20vh) rotateY(-110deg) scale(0.6);
+        opacity: 0;
+    }
 }

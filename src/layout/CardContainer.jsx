@@ -5,7 +5,7 @@ import Home from "../pages/Home";
 import AboutMe from "../pages/AboutMe";
 import Resume from "../pages/Resume";
 import Portfolio from "../pages/Portfolio";
-import Blog from "../pages/Blog";
+// import Blog from "../pages/Blog";
 import Contact from "../pages/Contact";
 
 const CardContainer = (props) => {
@@ -46,22 +46,52 @@ const CardContainer = (props) => {
         </section>
         <section className="card-container_content">
           <div className="card-container_content--animated-sections">
-			<section className={index === 0 ? "animated-section section-active": "animated-section"}>
+            <section
+              className={
+                index === 0
+                  ? "animated-section section-active"
+                  : "animated-section section-deactive"
+              }
+            >
               <Home />
             </section>
-            <section className={index === 1 ? "animated-section section-active": "animated-section"}>
+            <section
+              className={
+                index === 1
+                  ? "animated-section section-active"
+                  : "animated-section section-deactive"
+              }
+            >
               <AboutMe />
             </section>
-            <section className={index === 2 ? "animated-section section-active": "animated-section"}>
+            <section
+              className={
+                index === 2
+                  ? "animated-section section-active"
+                  : "animated-section section-deactive"
+              }
+            >
               <Resume />
             </section>
-            <section className={index === 3 ? "animated-section section-active": "animated-section"}>
+            <section
+              className={
+                index === 3
+                  ? "animated-section section-active"
+                  : "animated-section section-deactive"
+              }
+            >
               <Portfolio />
             </section>
-            {/* <section className={index === 4 ? "animated-section section-active": "animated-section"}>
+            {/* <section className={index === 4 ? "animated-section section-active" : "animated-section section-deactive"}>
               <Blog />
             </section> */}
-            <section className={index === 4 ? "animated-section section-active": "animated-section"}>
+            <section
+              className={
+                index === 4
+                  ? "animated-section section-active"
+                  : "animated-section section-deactive"
+              }
+            >
               <Contact />
             </section>
           </div>

@@ -21,8 +21,8 @@ const AboutMe = () => {
               with liquid and React.js. <br />I am passionate on technologies
               and enjoy learning new technologies. Pursue continuous improvement
               of code quality and build project code in a strictly standardized
-              format. Optimism and can face challenges at work positively. Likes
-              teamwork and enjoys independent problem-solving time.
+              format. Optimism and can face challenges at work positively. Like
+              teamwork and enjoy independent problem-solving time.
             </p>
           </Col>
           <Col xs={24} sm={9}>
